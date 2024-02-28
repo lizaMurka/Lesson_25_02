@@ -11,3 +11,9 @@ count_unique_numbers = len(intersection)
 print(f"Number of unique numbers in common: {count_unique_numbers}")
 
 text = "The first line contains the number of rows, followed by the rows themselves."
+
+words = [word.lower() for word in text.split()]
+
+unique_words = {word for word in words}
+
+print(f"Number of unique words: {len(unique_words)}")
